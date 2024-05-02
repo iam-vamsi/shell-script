@@ -1,8 +1,14 @@
 #!/bin/bash
 
-colours=("red" "green" "yellow")
+NUMBER1=$1
+NUMBER2=$2
 
-echo "first colour: ${colours[0]}"
+SUM=$($NUMBER1+$NUMBER2)
 
+echo "Total:: $SUM"
 
-echo "all colours: ${colours[@]}"
+echo "How many args passed:: $#"
+
+echo "All args passed:: $@"
+
+echo "Script name:: $0"
